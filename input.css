@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+}
+
+p {
+	max-width: 64ch;
+}
+
+#hero {
+	background: url("../images/bg-header-mobile.png") top center / contain
+		no-repeat;
+}
+
+.ficon:hover {
+	filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
+		brightness(101%) contrast(94%);
+}
+
+@media (min-width: 576px) {
+	#hero {
+		background-image: url("../images/bg-header-desktop.png");
+	}
+}
